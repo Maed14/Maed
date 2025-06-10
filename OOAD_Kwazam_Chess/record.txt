@@ -1,0 +1,25 @@
+Blue time:0:38
+Red time:0:26
+CurrentTurn:Red
+Round:10
+
+Xor,Red,(0,0),MoveUp
+Sau,Red,(2,1),MoveUp
+Biz,Red,(3,0),MoveUp
+Biz,Red,(1,0),MoveUp
+Ram,Red,(0,2),MoveUp
+Tor,Red,(4,0),MoveUp
+Ram,Red,(1,1),MoveUp
+Ram,Red,(2,6),MoveDown
+Ram,Red,(3,1),MoveUp
+Ram,Red,(4,1),MoveUp
+
+Ram,Blue,(4,6),MoveUp
+Ram,Blue,(0,6),MoveUp
+Ram,Blue,(3,4),MoveUp
+Ram,Blue,(1,2),MoveUp
+Tor,Blue,(0,7),MoveUp
+Biz,Blue,(4,4),MoveUp
+Sau,Blue,(3,6),MoveUp
+Xor,Blue,(4,7),MoveUp
+Biz,Blue,(0,5),MoveUp
