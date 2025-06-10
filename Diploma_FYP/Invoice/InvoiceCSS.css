@@ -1,0 +1,251 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #fff;
+    color: #ff661f;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    z-index: 1;
+    width: calc(100% - 250px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff661f;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #ff661f;
+    color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 250px;
+    overflow-y: auto;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.content p {
+    font-size: 16px;
+    color: #333;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+    width: 100%;
+    background: #ff661f;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:focus {
+    outline: none;
+}
+
+.accordion-button:hover {
+    background-color: #ff8c4d;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    background: #f4f4f4;
+}
+
+.accordion-content.show {
+    max-height: 500px; /* Adjust as necessary */
+    padding: 15px;
+}
+
+.invoice-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.invoice-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.invoice-details p {
+    margin: 0;
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: #f2f2f2;
+}
+
+.total {
+    text-align: right;
+    border-top: 2px dashed #ddd;
+    padding-top: 10px;
+}
+
+.total p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.total span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.payment-info p {
+    margin: 5px 0;
+}
+
+.payment-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.payment-info a:hover {
+    text-decoration: underline;
+}
+
+.accordion-button {
+    width: 100%;
+    background: #ff661f;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.accordion-button:focus {
+    outline: none;
+}
+
+.accordion-button.active {
+    background: #ff8c4d;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    background: #f4f4f4;
+}

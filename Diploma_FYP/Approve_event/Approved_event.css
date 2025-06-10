@@ -1,0 +1,85 @@
+.content {
+    margin: 0 8vw;
+    line-height: 1.8;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"].text,
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+.approve-buttons {
+
+display: flex;
+justify-content: center;
+gap: 15px;
+padding: 20px;
+}
+
+.next-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    text-decoration: none;
+  }
+  
+  .next-buttons a.button {
+    background-color: #FF5106;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .next-buttons a.button:hover {
+    background-color: #FF6600;
+  }
+  
+  .next-buttons a.button:first-child {
+    margin-right: 20px;
+  }
+
+button {
+    width: 20%;
+    padding: 15px;
+    background-color: #FF5106;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}

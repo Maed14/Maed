@@ -1,0 +1,209 @@
+/* Global styles */
+.content {
+    margin: 0 8vw;
+    line-height: 1.8;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordersheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-filter {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-filter input {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.order-list {
+    padding: 40px;
+}
+
+.order-item {
+    display: flex;
+    background-color: #F0F3F5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.order-item-date {
+    width: 140px;
+    height: 140px;
+    border-right: dashed 2px #BABABA;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.order-item-date::before,
+.order-item-date::after {
+    content: '';
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.order-item-date::before {
+    right: -25px;
+    top: -25px;
+}
+
+.order-item-date::after {
+    right: -25px;
+    bottom: -25px;
+}
+
+.order-item-date span {
+    display: block;
+}
+
+.order-item-date .day {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.order-item-date .month {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+.order-item-content {
+    flex-grow: 1;
+    padding: 20px 20px 20px 40px;
+}
+
+.order-item-content strong {
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+}
+
+.order-item-content span {
+    display: block;
+    margin-top: 5px;
+    color: #6c757d;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+}
+
+span.event_status {
+    display: inline-block;
+    background-color: #ff661f;
+    color: white;
+    font-size: 0.75em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.details a {
+    color: white;
+    border: 1px solid #dee2e6;
+    background-color: #ff661f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+/* Add a hover effect for the details button */
+.details a:hover {
+    background-color: #ff8a33;
+}
+
+.status-container {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px; /* Added to provide space between the title and status */
+}
+
+.pending {
+    background-color: yellow; /* Example color */
+    color: #333; /* Example color */
+}
+
+.approved {
+    background-color: green; /* Example color */
+    color: white; /* Example color */
+}
+
+.rejected {
+    background-color: red;
+    color: white;
+}
+
+/* Styles for filter buttons */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-filter {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ff661f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-filter:hover {
+    background-color: #0056b3;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #FF5106; /* Adjust color as needed */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+}
+
+.btn-details:hover {
+    background-color: #e44b06; /* Adjust hover color as needed */
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

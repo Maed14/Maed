@@ -1,0 +1,43 @@
+body{
+    padding:50px;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-group{
+    margin-bottom:30px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-relative .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+h1 {
+    text-align: center; 
+    margin-bottom: 50px; 
+}
+
+.event-frenzy {
+    color: #FF5106; 
+}
+
+.btn-orange {
+    background-color: #FF5106; /* Orange color */
+    border-color: #FF5106; /* Matching border color */
+    color: #fff; /* White text color */
+}
+
+.btn-orange:hover {
+    background-color: #e64a02; /* Darker shade of orange on hover */
+}
